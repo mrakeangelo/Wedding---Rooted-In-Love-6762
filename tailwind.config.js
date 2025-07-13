@@ -1,0 +1,103 @@
+/** @type {import('tailwindcss').Config} */
+export default {
+  content: [
+    "./index.html",
+    "./src/**/*.{js,ts,jsx,tsx}",
+  ],
+  darkMode: 'class',
+  theme: {
+    extend: {
+      colors: {
+        gold: {
+          50: '#fffbf2',
+          100: '#fef3c7',
+          200: '#fde68a',
+          300: '#fcd34d',
+          400: '#fbbf24',
+          500: '#f59e0b',
+          600: '#d97706',
+          700: '#b45309',
+          800: '#92400e',
+          900: '#78350f',
+        },
+        terracotta: {
+          50: '#fdf4f3',
+          100: '#fde6e3',
+          200: '#fbd1cc',
+          300: '#f7b2a8',
+          400: '#f08975',
+          500: '#e85d47',
+          600: '#d4401f',
+          700: '#b23418',
+          800: '#932f17',
+          900: '#7a2e19',
+        },
+        kente: {
+          50: '#fff8f0',
+          100: '#ffeddb',
+          200: '#ffd9b6',
+          300: '#ffbe86',
+          400: '#ff9654',
+          500: '#ff7b2f',
+          600: '#f0590a',
+          700: '#c7420a',
+          800: '#9e3710',
+          900: '#7f3010',
+        },
+        indigo: {
+          50: '#f0f4ff',
+          100: '#e0e8ff',
+          200: '#c7d4ff',
+          300: '#a5b8ff',
+          400: '#8292ff',
+          500: '#6366f1',
+          600: '#4f46e5',
+          700: '#4338ca',
+          800: '#3730a3',
+          900: '#312e81',
+        },
+        bone: {
+          50: '#fefefe',
+          100: '#fefcfc',
+          200: '#fdf8f6',
+          300: '#fbf1ed',
+          400: '#f8e6df',
+          500: '#f3d5c7',
+          600: '#e8b894',
+          700: '#d69e6f',
+          800: '#c4854d',
+          900: '#a16d3a',
+        },
+      },
+      fontFamily: {
+        'slab': ['Rockwell', 'Courier New', 'serif'],
+        'sans': ['Inter', 'system-ui', 'sans-serif'],
+      },
+      animation: {
+        'fade-in': 'fadeIn 0.8s ease-in-out',
+        'slide-up': 'slideUp 0.6s ease-out',
+        'pulse-gold': 'pulseGold 2s ease-in-out infinite',
+        'drum-beat': 'drumBeat 1.5s ease-in-out infinite',
+      },
+      keyframes: {
+        fadeIn: {
+          '0%': { opacity: '0', transform: 'translateY(20px)' },
+          '100%': { opacity: '1', transform: 'translateY(0)' },
+        },
+        slideUp: {
+          '0%': { opacity: '0', transform: 'translateY(40px)' },
+          '100%': { opacity: '1', transform: 'translateY(0)' },
+        },
+        pulseGold: {
+          '0%, 100%': { opacity: '1', transform: 'scale(1)' },
+          '50%': { opacity: '0.8', transform: 'scale(1.05)' },
+        },
+        drumBeat: {
+          '0%, 100%': { transform: 'scale(1)' },
+          '50%': { transform: 'scale(1.1)' },
+        },
+      },
+    },
+  },
+  plugins: [],
+}
